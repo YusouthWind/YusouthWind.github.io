@@ -1,0 +1,43 @@
+baseURL = "http://yusouthwind.github.io/"
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-cn"
+title = "CYCIN | AI 项目看板"
+theme = "FixIt"
+
+[params]
+  version = "v0.4.5"
+  defaultTheme = "auto"
+
+  [params.header]
+    desktopMode = "sticky"
+    mobileMode = "auto"
+    [params.header.title]
+      name = "Yu 技术博客"
+      logo = ""
+      typeit = true
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = ""
+      title = "探索 AI 的三十岁青年"
+      subtitle = "全栈/AI项目落地/CLI硬核流"
+      social = true
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "categories"
+  name = "分类"
+  url = "/categories/"
+  weight = 3
