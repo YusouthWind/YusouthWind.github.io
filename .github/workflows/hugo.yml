@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+dname: Deploy Hugo site to Pages
 
 on:
   push:
@@ -43,7 +43,6 @@ jobs:
 
       - name: Build with Hugo
         env:
-          HUGO_CACHEDIR: ${{行动.cache-dir}}
           HUGO_ENV: production
         run: |
           hugo \
