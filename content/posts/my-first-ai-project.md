@@ -6,9 +6,7 @@ slug: ae3e9b5
 draft: false
 author:
 name: Yu
-link:
-email:
-avatar:
+
 description:
 keywords:
 comment: false
