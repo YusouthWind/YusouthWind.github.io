@@ -5,10 +5,10 @@ date: 2026-05-29T18:09:36+08:00
 slug: ae3e9b5
 draft: false
 author:
-  name: Yu
-  link:
-  email:
-  avatar:
+name: Yu
+link:
+email:
+avatar:
 description:
 keywords:
 comment: false
