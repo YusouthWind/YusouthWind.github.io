@@ -22,13 +22,11 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.123.0 # 如果需要，你可以将其修改为你本地的hugo版本号
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive' # 强制拉取包含FixIt在内的所有子模块样式
+          submodules: 'recursive'
           fetch-depth: 0
 
       - name: Setup Pages
@@ -36,14 +34,12 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
-          extended: true # 开启extended，避免FixIt主题编译报错
+          extended: true
 
       - name: Build with Hugo
-        env:
-          HUGO_ENV: production
         run: |
           hugo \
             --gc \
